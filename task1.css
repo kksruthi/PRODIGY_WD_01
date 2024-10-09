@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    line-height: 1.6;
+}
+
+section {
+    padding: 60px 10px;
+    text-align: center;
+}
+
+.logo{
+    margin: 5px;
+    width:60px;
+    height:60px;
+    border-radius: 30px;
+}
+
+header{
+    position: fixed;
+    background-color:white;
+    border-radius: 10px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.7s;
+}
+
+header.scrolled{
+    background-color: black;
+}
+header.scrolled #navbar a:hover{
+    color:rgb(52, 239, 105);
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: large;
+}
+#navbar a{
+    text-decoration: none;
+    color:black
+}
+header.scrolled #navbar a{
+    color: white;
+}
+
+#navbar a:hover{
+    color:rgb(52, 239, 105);
+    cursor: pointer;
+}
+#home{
+    background-image: url(img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border-radius: 10px;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    height:83vh;
+}
+
+.homecontent{
+    padding: 20px;
+    font-size: xx-large;
+}
+
+h2{
+    margin: 50px;
+    text-align: center;
+}
+.event-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.event{
+    background-color: #e2e1e1;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 30px;
+    width:240px;
+    flex-basis: 20%;
+}
+
+.event img{
+    width:245px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+.event h3{
+    margin: 10px;
+}
+
+button{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    width: 100px;
+    color: white;
+    background-color: rgb(234, 6, 56);
+}
+
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.form{
+    border: none;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: rgb(224, 229, 231);
+}
+
+
+.form input, label{
+    margin: 10px;
+    padding: 10px;
+    width:200px;
+    border:none;
+}
+.form textarea{
+    padding: 5px;
+    width: 240px;
+    height: 70px;
+    border: none;
+}
+.contact-details {
+    margin-top: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+@media (max-width:425px) {
+    .logo{
+        width: 30px;
+        height: 30px;
+    }
+    #navbar button{
+        width: 70px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .event{
+        margin:10px
+    }
+    .form input{
+        width: 160px;
+    }
+    .form textarea{
+        width: 200px;
+    }
+}
